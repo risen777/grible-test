@@ -15,8 +15,10 @@ public class Dialog {
     private SelenideElement container = $(".ui-dialog");
 
     public Dialog setFor(String label, String value) throws InterruptedException {
-        container.$(withText(label)).find(byXpath("./following-sibling::*/input")).setValue(value);
-        return this;
+
+ new DialogInput(this.container,label).setValue(value);
+  //finding Dialog input based on label and setting its value
+         return this;
     }
 
 

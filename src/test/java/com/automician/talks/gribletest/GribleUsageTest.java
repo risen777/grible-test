@@ -16,7 +16,11 @@ public class GribleUsageTest extends BaseTest {
     public void createTestTableBasedOnDataStorageNewProduct() throws InterruptedException {
         Products products= new Products();
         products.open();
-        products.add("Product");
+
+        String name= "Product " + System.currentTimeMillis();
+        String path = "kamikadzeD";
+        products.addProduct(name, path);
+        products.open(name);
 
 
     }

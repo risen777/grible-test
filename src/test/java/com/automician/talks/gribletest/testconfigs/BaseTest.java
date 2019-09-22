@@ -9,6 +9,7 @@ public class BaseTest {
 
     {
         Configuration.baseUrl = "http://localhost:8123";
+
     }
 
 }
