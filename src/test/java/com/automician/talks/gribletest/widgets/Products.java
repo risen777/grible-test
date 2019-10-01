@@ -3,7 +3,9 @@ package com.automician.talks.gribletest.widgets;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
 
+import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.$$;
 
 /**
  * Created by Sergey
@@ -30,5 +32,9 @@ public class Products {
     }
 
     public void open(String name) {
+
+
+
+       new Section().click(name);
     }
 }

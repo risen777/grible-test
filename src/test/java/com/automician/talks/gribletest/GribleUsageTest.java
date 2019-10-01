@@ -18,10 +18,10 @@ public class GribleUsageTest extends BaseTest {
         products.open();
 
         String name= "Product " + System.currentTimeMillis();
-        String path = "kamikadzeD";
+        String path = "Path " + System.currentTimeMillis();
         products.addProduct(name, path);
         products.open(name);
-
+Thread.sleep(100000);
 
     }
 
